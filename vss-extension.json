@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "AssemblyVersionLoader",
   "name": "Assembly version loader",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "publisher": "AppiePau",
   "public": true,
   "targets": [
@@ -40,10 +40,10 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/appipau/AssemblyVersionLoader"
+      "uri": "https://github.com/appiepau/AssemblyVersionLoader"
     },
     "support": {
-      "uri": "https://github.com/appipau/AssemblyVersionLoader/issues"
+      "uri": "https://github.com/appiepau/AssemblyVersionLoader/issues"
     }
   },
   "screenshots": [
@@ -56,7 +56,7 @@
   ],
   "repository": {
     "type": "git",
-    "uri": "https://github.com/appipau/AssemblyVersionLoader"
+    "uri": "https://github.com/appiepau/AssemblyVersionLoader"
   },
   "contributions": [
     {
