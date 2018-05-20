@@ -1,29 +1,33 @@
 {
   "manifestVersion": 1,
-  "id": "AssemblyInfoReader",
-  "name": "Assembly Info Reader",
-  "version": "1.1.0",
-  "publisher": "kherzog",
+  "id": "AssemblyVersionLoader",
+  "name": "Assembly version loader",
+  "version": "1.0.7",
+  "publisher": "AppiePau",
+  "public": true,
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "A build task that reads the assembly attributes from the AssemblyInfo file and makes them available as build variables.",
+  "description": "Loads an assembly version from the DLL file using reflection and makes them available as build variables.",
   "categories": [
     "Build and release"
   ],
   "tags": [
+    "Assembly",
     "AssemblyInfo",
     "Version",
-    "Build Variables"
+    "Variables",
+    "Build",
+    "Process"
   ],
   "icons": {
     "default": "images/extension-icon.png"
   },
   "files": [
     {
-      "path": "AssemblyInfoReaderTask"
+      "path": "AssemblyVersionLoader"
     }
   ],
   "content": {
@@ -36,27 +40,24 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/kyleherzog/AssemblyInfoReaderTask"
+      "uri": "https://github.com/appipau/AssemblyVersionLoader"
     },
     "support": {
-      "uri": "https://github.com/kyleherzog/AssemblyInfoReaderTask/issues"
+      "uri": "https://github.com/appipau/AssemblyVersionLoader/issues"
     }
   },
   "screenshots": [
     {
-      "path": "images/screenshot1.png"
+      "path": "images/screen1.png"
     },
     {
-      "path":  "images/screenshot2.png"
+      "path": "images/screen2.png"
     }
   ],
   "repository": {
     "type": "git",
-    "uri": "https://github.com/kyleherzog/AssemblyInfoReaderTask"
+    "uri": "https://github.com/appipau/AssemblyVersionLoader"
   },
-  "galleryFlags": [
-    "Public"
-  ],
   "contributions": [
     {
       "id": "assembly-info-reader-build-task",
@@ -65,7 +66,7 @@
         "ms.vss-distributed-task.tasks"
       ],
       "properties": {
-        "name": "AssemblyInfoReaderTask"
+        "name": "AssemblyVersionLoader"
       }
     }
   ]
