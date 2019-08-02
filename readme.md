@@ -40,5 +40,5 @@ This extension was created out of inspiration of (and derived from):
  - [Nuget version synchronizer by Cdiscount Alm](https://marketplace.visualstudio.com/items?itemName=CdiscountAlm.vsts-nugetversionsynchronizer-tasks)
  - [Assembly Info Reader by Kyle Herzog](https://marketplace.visualstudio.com/items?itemName=kherzog.AssemblyInfoReader)
 
- #About Paul
+ # About Paul
  A software developer for over 15 years, currently employed at Dazzleware B.V. We build custom tailored software that integrate with the core businesses of our customers. Making them more empowered in their field of expertise. 
