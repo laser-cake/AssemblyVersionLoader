@@ -22,6 +22,7 @@ function SetAssemblyVariables($file)
     Write-Host ("Loaded assembly file '" + $assemblyName + "'")
 	$assemblyVersion = [Version](([Reflection.AssemblyName]$assemblyName)).Version
   	$fileVersion = [Version]([System.Diagnostics.FileVersionInfo]::GetVersionInfo($file)).FileVersion
+	$productVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($file).ProductVersion
     
     $propertyName = "AssemblyInfo"
     #SetBuildVariable "$prefix$propertyName.Description" $assemblyName.Description
@@ -44,7 +45,8 @@ function SetAssemblyVariables($file)
     SetBuildVariable "$prefix$propertyName.Build" $fileVersion.Build
     SetBuildVariable "$prefix$propertyName.Revision" $fileVersion.Revision
 
-
+	$propertyName = "AssemblyInfo.ProductVersion"
+	SetBuildVariable "$prefix$propertyName" $productVersion
 }
 
 
