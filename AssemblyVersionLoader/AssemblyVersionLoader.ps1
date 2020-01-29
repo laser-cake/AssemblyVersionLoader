@@ -1,6 +1,6 @@
-﻿Param (
+Param (
     [string]$sourceFileName = "",
-	[string]$variablesPrefix = ""
+    [string]$variablesPrefix = ""
 )
   
 ## Load for $/Development/DwCms.Base/bin/release/DwCms.Base.dll
@@ -11,17 +11,18 @@
 
 function SetBuildVariable([string]$varName, [string]$varValue)
 {
-	Write-Host ("Setting variable " + $variablesPrefix + $varName + " to '" + $varValue + "'")
-	Write-Output ("##vso[task.setvariable variable=" + $variablesPrefix + $varName + ";]" +  $varValue )
+    Write-Host ("Setting variable " + $variablesPrefix + $varName + " to '" + $varValue + "'")
+    Write-Output ("##vso[task.setvariable variable=" + $variablesPrefix + $varName + ";]" +  $varValue )
 }
 
 function SetAssemblyVariables($file)
 {
-	Write-Host ("Loading assembly file '" + $file + "'...")
+    Write-Host ("Loading assembly file '" + $file + "'...")
     $assemblyName = [System.Reflection.AssemblyName]([System.Reflection.AssemblyName]::GetAssemblyName($file))
     Write-Host ("Loaded assembly file '" + $assemblyName + "'")
-	$assemblyVersion = [Version](([Reflection.AssemblyName]$assemblyName)).Version
-  	$fileVersion = [Version]([System.Diagnostics.FileVersionInfo]::GetVersionInfo($file)).FileVersion
+    $assemblyVersion = [Version](([Reflection.AssemblyName]$assemblyName)).Version
+    $fileVersion = [Version]([System.Diagnostics.FileVersionInfo]::GetVersionInfo($file)).FileVersion
+    $productVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($file).ProductVersion
     
     $propertyName = "AssemblyInfo"
     #SetBuildVariable "$prefix$propertyName.Description" $assemblyName.Description
@@ -44,7 +45,8 @@ function SetAssemblyVariables($file)
     SetBuildVariable "$prefix$propertyName.Build" $fileVersion.Build
     SetBuildVariable "$prefix$propertyName.Revision" $fileVersion.Revision
 
-
+    $propertyName = "AssemblyInfo.ProductVersion"
+    SetBuildVariable "$prefix$propertyName" $productVersion
 }
 
 

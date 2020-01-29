@@ -34,6 +34,7 @@ $(AssemblyInfo.AssemblyVersion.Major)
 | AssemblyInfo.FileVersion.Minor | Minor digit from the file version. |
 | AssemblyInfo.FileVersion.Build | Build digit from the file version. |
 | AssemblyInfo.FileVersion.Revision | Revision digit from the file version. |
+| AssemlbyInfo.ProductVersion | Informational version from the assembly |
 
 # Credits
 This extension was created out of inspiration of (and derived from):
