@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "AssemblyVersionLoader",
   "name": "Assembly version loader",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "publisher": "AppiePau",
   "public": true,
   "targets": [
@@ -12,7 +12,7 @@
   ],
   "description": "Loads an assembly version from the DLL file using reflection and makes them available as build variables.",
   "categories": [
-    "Build and release"
+    "Azure Pipelines"
   ],
   "tags": [
     "Assembly",
