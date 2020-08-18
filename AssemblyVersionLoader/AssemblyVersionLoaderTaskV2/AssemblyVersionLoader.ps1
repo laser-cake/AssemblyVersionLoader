@@ -24,11 +24,9 @@ function SetAssemblyVariables($file)
     $productVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($file).ProductVersion
     
     $propertyName = "AssemblyInfo"
-    #SetBuildVariable "$prefix$propertyName.Description" $assemblyName.Description
+
     SetBuildVariable "$prefix$propertyName.Name" $assemblyName.Name
 
-    #$fileInfo = [System.IO.File]::$fileInfo($file)
-    #SetBuildVariable "$prefix$propertyName.Build" $fileInfo
 
     $propertyName = "AssemblyInfo.AssemblyVersion"
     SetBuildVariable "$prefix$propertyName" $assemblyVersion
