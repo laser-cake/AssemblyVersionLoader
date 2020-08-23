@@ -3,7 +3,7 @@
   "id": "AssemblyVersionLoader",
   "name": "Assembly version loader",
   "version": "2.0.0",
-  "publisher": "AppiePau",
+  "publisher": "Ash Stansfield",
   "public": true,
   "targets": [
     {
@@ -40,10 +40,10 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/appiepau/AssemblyVersionLoader"
+      "uri": "https://github.com/laser-cake/AssemblyVersionLoader"
     },
     "support": {
-      "uri": "https://github.com/appiepau/AssemblyVersionLoader/issues"
+      "uri": "https://github.com/laser-cake/AssemblyVersionLoader/issues"
     }
   },
   "screenshots": [
@@ -56,7 +56,7 @@
   ],
   "repository": {
     "type": "git",
-    "uri": "https://github.com/appiepau/AssemblyVersionLoader"
+    "uri": "https://github.com/laser-cake/AssemblyVersionLoader"
   },
   "contributions": [
     {
