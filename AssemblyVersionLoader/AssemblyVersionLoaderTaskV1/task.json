@@ -1,5 +1,5 @@
 {
-  "id": "9d9ebb3c-a4f4-41fa-a65c-dfc783aa16d2",
+  "id": "3d2aab13-c755-449e-ba19-96c467f0dd71",
   "name": "AssemblyVersionLoader",
   "friendlyName": "Assembly version loader",
   "description": "Loads an assembly version from the DLL file using reflection and makes them available as build variables.",
