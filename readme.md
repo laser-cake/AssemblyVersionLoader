@@ -1,5 +1,8 @@
 ﻿# Assembly version loader
 
+### This is the updated version of AppiePaus version of Assembly Version Loader. Please use this version.
+
+
 A build task that reads the assembly file attributes from a compiled assembly file and makes them available as build variables. This extension was created from the need to have a full assembly version places into nuspec files. This extension will extract the required version data from your compiled DLL file(s).
 
 ### Arguments
